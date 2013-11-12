@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DialoNewsDB">
+  <DataContextMoniker Name="/DialoNewsDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="32bd42cc-3f81-4ec9-8a8e-af26fcf6e12b" absoluteBounds="1.625, 1.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DialoNewsDBDataContext/News" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b7395eb3-bce7-47c7-9bc1-c9db903f9580" absoluteBounds="1.6400000000000006, 1.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9009d4eb-364b-4321-8faa-15bf7175aa5f" absoluteBounds="3.875, 1.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DialoNewsDBDataContext/Image" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8d3bc6d0-9a8c-4b69-ad72-6f069809a26a" absoluteBounds="3.8899999999999997, 1.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="89081b9a-e342-41c6-986e-43d67683e87e" absoluteBounds="6.375, 1.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DialoNewsDBDataContext/NewsPreview" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7bb5c558-648c-4ba6-881e-7d4e9b66743c" absoluteBounds="6.39, 1.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetNews">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="takeCount" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNewsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNewsResult" type="tns:ArrayOfNews" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfNews">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="News" nillable="true" type="tns:News" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="News">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ContentSample" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NewsID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Subject" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ImageType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImageData" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ArticleTypeID" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetNewsSimple">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="takeCount" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNewsSimpleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNewsSimpleResult" type="tns:ArrayOfNews" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNewsForIPhone">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="takeCount" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="filter" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNewsForIPhoneResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNewsForIPhoneResult" type="tns:ArrayOfNewsForIPhone" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfNewsForIPhone">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="NewsForIPhone" nillable="true" type="tns:NewsForIPhone" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="NewsForIPhone">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="NewsID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Subject" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DateTime" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ImageType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImageData" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContentSample" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ArticleTypeID" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetNewsArticle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="articleID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNewsArticleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNewsArticleResult" type="tns:News" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNewsArticleForIPhone">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="articleID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNewsArticleForIPhoneResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNewsArticleForIPhoneResult" type="tns:News" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLatestNewsArticleForIPhone">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="filter" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLatestNewsArticleForIPhoneResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLatestNewsArticleForIPhoneResult" type="tns:News" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRandomArticleForIPhone">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetRandomArticleForIPhoneResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRandomArticleForIPhoneResult" type="tns:NewsForIPhone" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetNewsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNews" />
+  </wsdl:message>
+  <wsdl:message name="GetNewsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNewsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNewsSimpleSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNewsSimple" />
+  </wsdl:message>
+  <wsdl:message name="GetNewsSimpleSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNewsSimpleResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNewsForIPhoneSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNewsForIPhone" />
+  </wsdl:message>
+  <wsdl:message name="GetNewsForIPhoneSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNewsForIPhoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNewsArticleSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNewsArticle" />
+  </wsdl:message>
+  <wsdl:message name="GetNewsArticleSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNewsArticleResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNewsArticleForIPhoneSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNewsArticleForIPhone" />
+  </wsdl:message>
+  <wsdl:message name="GetNewsArticleForIPhoneSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNewsArticleForIPhoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLatestNewsArticleForIPhoneSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLatestNewsArticleForIPhone" />
+  </wsdl:message>
+  <wsdl:message name="GetLatestNewsArticleForIPhoneSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLatestNewsArticleForIPhoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRandomArticleForIPhoneSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRandomArticleForIPhone" />
+  </wsdl:message>
+  <wsdl:message name="GetRandomArticleForIPhoneSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRandomArticleForIPhoneResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="GetNews">
+      <wsdl:input message="tns:GetNewsSoapIn" />
+      <wsdl:output message="tns:GetNewsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNewsSimple">
+      <wsdl:input message="tns:GetNewsSimpleSoapIn" />
+      <wsdl:output message="tns:GetNewsSimpleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNewsForIPhone">
+      <wsdl:input message="tns:GetNewsForIPhoneSoapIn" />
+      <wsdl:output message="tns:GetNewsForIPhoneSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNewsArticle">
+      <wsdl:input message="tns:GetNewsArticleSoapIn" />
+      <wsdl:output message="tns:GetNewsArticleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNewsArticleForIPhone">
+      <wsdl:input message="tns:GetNewsArticleForIPhoneSoapIn" />
+      <wsdl:output message="tns:GetNewsArticleForIPhoneSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestNewsArticleForIPhone">
+      <wsdl:input message="tns:GetLatestNewsArticleForIPhoneSoapIn" />
+      <wsdl:output message="tns:GetLatestNewsArticleForIPhoneSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRandomArticleForIPhone">
+      <wsdl:input message="tns:GetRandomArticleForIPhoneSoapIn" />
+      <wsdl:output message="tns:GetRandomArticleForIPhoneSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetNews">
+      <soap:operation soapAction="http://tempuri.org/GetNews" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewsSimple">
+      <soap:operation soapAction="http://tempuri.org/GetNewsSimple" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewsForIPhone">
+      <soap:operation soapAction="http://tempuri.org/GetNewsForIPhone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewsArticle">
+      <soap:operation soapAction="http://tempuri.org/GetNewsArticle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewsArticleForIPhone">
+      <soap:operation soapAction="http://tempuri.org/GetNewsArticleForIPhone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestNewsArticleForIPhone">
+      <soap:operation soapAction="http://tempuri.org/GetLatestNewsArticleForIPhone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRandomArticleForIPhone">
+      <soap:operation soapAction="http://tempuri.org/GetRandomArticleForIPhone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetNews">
+      <soap12:operation soapAction="http://tempuri.org/GetNews" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewsSimple">
+      <soap12:operation soapAction="http://tempuri.org/GetNewsSimple" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewsForIPhone">
+      <soap12:operation soapAction="http://tempuri.org/GetNewsForIPhone" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewsArticle">
+      <soap12:operation soapAction="http://tempuri.org/GetNewsArticle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewsArticleForIPhone">
+      <soap12:operation soapAction="http://tempuri.org/GetNewsArticleForIPhone" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestNewsArticleForIPhone">
+      <soap12:operation soapAction="http://tempuri.org/GetLatestNewsArticleForIPhone" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRandomArticleForIPhone">
+      <soap12:operation soapAction="http://tempuri.org/GetRandomArticleForIPhone" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://localhost/DiabloNews/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://localhost/DiabloNews/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

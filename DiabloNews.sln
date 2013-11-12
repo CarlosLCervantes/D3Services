@@ -1,0 +1,186 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DiabloNews", "http://localhost/DiabloNews", "{19E8F6F9-589A-40E0-BDF0-E416E46D2C00}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		ProjectReferences = "{7D998898-DB52-470D-ACFE-65D29E1A58EE}|DAL.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/DiabloNews"
+		Debug.AspNetCompiler.PhysicalPath = "H:\SSD Backup 6 Deb 201 BAK\inetpub\wwwroot\DiabloNews\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\DiabloNews\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/DiabloNews"
+		Release.AspNetCompiler.PhysicalPath = "H:\SSD Backup 6 Deb 201 BAK\inetpub\wwwroot\DiabloNews\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\DiabloNews\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\..\..\..\..\..\inetpub\wwwroot\DiabloNews\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{7D998898-DB52-470D-ACFE-65D29E1A58EE}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DiabloNewsAdmin", "http://localhost/DiabloNewsAdmin", "{AF237D46-242A-4695-9DD1-1F595E714D82}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		ProjectReferences = "{7D998898-DB52-470D-ACFE-65D29E1A58EE}|DAL.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/DiabloNewsAdmin"
+		Debug.AspNetCompiler.PhysicalPath = "H:\SSD Backup 6 Deb 201 BAK\inetpub\wwwroot\DiabloNewsAdmin\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\DiabloNewsAdmin\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/DiabloNewsAdmin"
+		Release.AspNetCompiler.PhysicalPath = "H:\SSD Backup 6 Deb 201 BAK\inetpub\wwwroot\DiabloNewsAdmin\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\DiabloNewsAdmin\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\..\..\..\..\..\inetpub\wwwroot\DiabloNewsAdmin\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D3Tests", "TestProject1\D3Tests.csproj", "{92C2DA45-C51C-4AAB-A7B9-51BBA53670A0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{19E8F6F9-589A-40E0-BDF0-E416E46D2C00} = {19E8F6F9-589A-40E0-BDF0-E416E46D2C00}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E6C1E1CB-4A1F-45D3-BAC8-0C08420CA53D}"
+	ProjectSection(SolutionItems) = preProject
+		DiabloNews.vsmdi = DiabloNews.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DiabloNewsContent", "http://localhost/DiabloNewsContent", "{770FDDBB-73C1-48F7-915D-1D99B75E4804}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		ProjectReferences = "{7D998898-DB52-470D-ACFE-65D29E1A58EE}|DAL.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/DiabloNewsContent"
+		Debug.AspNetCompiler.PhysicalPath = "H:\SSD Backup 6 Deb 201 BAK\inetpub\wwwroot\DiabloNewsContent\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\DiabloNewsContent\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/DiabloNewsContent"
+		Release.AspNetCompiler.PhysicalPath = "H:\SSD Backup 6 Deb 201 BAK\inetpub\wwwroot\DiabloNewsContent\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\DiabloNewsContent\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\..\..\..\..\..\inetpub\wwwroot\DiabloNewsContent\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSSPollingService", "RSSPollingService\RSSPollingService.csproj", "{4E34D83A-36D8-4541-AC8D-B637F3313022}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSSLib", "RSSLib\RSSLib.csproj", "{EAD95AE9-C03C-440C-B7A5-FA05BA71D3F6}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "D3RSSPollServiceMSInstall", "D3RSSPollServiceMSInstall\D3RSSPollServiceMSInstall.vdproj", "{ED67E56D-A12D-498A-8AF1-A95966A56AF4}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = DiabloNews.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19E8F6F9-589A-40E0-BDF0-E416E46D2C00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19E8F6F9-589A-40E0-BDF0-E416E46D2C00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19E8F6F9-589A-40E0-BDF0-E416E46D2C00}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{19E8F6F9-589A-40E0-BDF0-E416E46D2C00}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{19E8F6F9-589A-40E0-BDF0-E416E46D2C00}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{19E8F6F9-589A-40E0-BDF0-E416E46D2C00}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{19E8F6F9-589A-40E0-BDF0-E416E46D2C00}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{19E8F6F9-589A-40E0-BDF0-E416E46D2C00}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{19E8F6F9-589A-40E0-BDF0-E416E46D2C00}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{19E8F6F9-589A-40E0-BDF0-E416E46D2C00}.Release|x86.ActiveCfg = Debug|Any CPU
+		{7D998898-DB52-470D-ACFE-65D29E1A58EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D998898-DB52-470D-ACFE-65D29E1A58EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D998898-DB52-470D-ACFE-65D29E1A58EE}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{7D998898-DB52-470D-ACFE-65D29E1A58EE}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{7D998898-DB52-470D-ACFE-65D29E1A58EE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7D998898-DB52-470D-ACFE-65D29E1A58EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D998898-DB52-470D-ACFE-65D29E1A58EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D998898-DB52-470D-ACFE-65D29E1A58EE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{7D998898-DB52-470D-ACFE-65D29E1A58EE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{7D998898-DB52-470D-ACFE-65D29E1A58EE}.Release|x86.ActiveCfg = Release|Any CPU
+		{AF237D46-242A-4695-9DD1-1F595E714D82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF237D46-242A-4695-9DD1-1F595E714D82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF237D46-242A-4695-9DD1-1F595E714D82}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{AF237D46-242A-4695-9DD1-1F595E714D82}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{AF237D46-242A-4695-9DD1-1F595E714D82}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AF237D46-242A-4695-9DD1-1F595E714D82}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF237D46-242A-4695-9DD1-1F595E714D82}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{AF237D46-242A-4695-9DD1-1F595E714D82}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{AF237D46-242A-4695-9DD1-1F595E714D82}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{AF237D46-242A-4695-9DD1-1F595E714D82}.Release|x86.ActiveCfg = Debug|Any CPU
+		{92C2DA45-C51C-4AAB-A7B9-51BBA53670A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92C2DA45-C51C-4AAB-A7B9-51BBA53670A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92C2DA45-C51C-4AAB-A7B9-51BBA53670A0}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{92C2DA45-C51C-4AAB-A7B9-51BBA53670A0}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{92C2DA45-C51C-4AAB-A7B9-51BBA53670A0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{92C2DA45-C51C-4AAB-A7B9-51BBA53670A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92C2DA45-C51C-4AAB-A7B9-51BBA53670A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92C2DA45-C51C-4AAB-A7B9-51BBA53670A0}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{92C2DA45-C51C-4AAB-A7B9-51BBA53670A0}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{92C2DA45-C51C-4AAB-A7B9-51BBA53670A0}.Release|x86.ActiveCfg = Release|Any CPU
+		{770FDDBB-73C1-48F7-915D-1D99B75E4804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{770FDDBB-73C1-48F7-915D-1D99B75E4804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{770FDDBB-73C1-48F7-915D-1D99B75E4804}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{770FDDBB-73C1-48F7-915D-1D99B75E4804}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{770FDDBB-73C1-48F7-915D-1D99B75E4804}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{770FDDBB-73C1-48F7-915D-1D99B75E4804}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{770FDDBB-73C1-48F7-915D-1D99B75E4804}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{770FDDBB-73C1-48F7-915D-1D99B75E4804}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{770FDDBB-73C1-48F7-915D-1D99B75E4804}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{770FDDBB-73C1-48F7-915D-1D99B75E4804}.Release|x86.ActiveCfg = Debug|Any CPU
+		{4E34D83A-36D8-4541-AC8D-B637F3313022}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{4E34D83A-36D8-4541-AC8D-B637F3313022}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{4E34D83A-36D8-4541-AC8D-B637F3313022}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{4E34D83A-36D8-4541-AC8D-B637F3313022}.Debug|x86.ActiveCfg = Debug|x86
+		{4E34D83A-36D8-4541-AC8D-B637F3313022}.Debug|x86.Build.0 = Debug|x86
+		{4E34D83A-36D8-4541-AC8D-B637F3313022}.Release|Any CPU.ActiveCfg = Release|x86
+		{4E34D83A-36D8-4541-AC8D-B637F3313022}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{4E34D83A-36D8-4541-AC8D-B637F3313022}.Release|Mixed Platforms.Build.0 = Release|x86
+		{4E34D83A-36D8-4541-AC8D-B637F3313022}.Release|x86.ActiveCfg = Release|x86
+		{4E34D83A-36D8-4541-AC8D-B637F3313022}.Release|x86.Build.0 = Release|x86
+		{EAD95AE9-C03C-440C-B7A5-FA05BA71D3F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAD95AE9-C03C-440C-B7A5-FA05BA71D3F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAD95AE9-C03C-440C-B7A5-FA05BA71D3F6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{EAD95AE9-C03C-440C-B7A5-FA05BA71D3F6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{EAD95AE9-C03C-440C-B7A5-FA05BA71D3F6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EAD95AE9-C03C-440C-B7A5-FA05BA71D3F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAD95AE9-C03C-440C-B7A5-FA05BA71D3F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAD95AE9-C03C-440C-B7A5-FA05BA71D3F6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{EAD95AE9-C03C-440C-B7A5-FA05BA71D3F6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{EAD95AE9-C03C-440C-B7A5-FA05BA71D3F6}.Release|x86.ActiveCfg = Release|Any CPU
+		{ED67E56D-A12D-498A-8AF1-A95966A56AF4}.Debug|Any CPU.ActiveCfg = Debug
+		{ED67E56D-A12D-498A-8AF1-A95966A56AF4}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{ED67E56D-A12D-498A-8AF1-A95966A56AF4}.Debug|x86.ActiveCfg = Debug
+		{ED67E56D-A12D-498A-8AF1-A95966A56AF4}.Release|Any CPU.ActiveCfg = Release
+		{ED67E56D-A12D-498A-8AF1-A95966A56AF4}.Release|Mixed Platforms.ActiveCfg = Release
+		{ED67E56D-A12D-498A-8AF1-A95966A56AF4}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
